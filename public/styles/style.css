@@ -154,8 +154,10 @@ form {
     margin-top: 20px;
     border: none; }
   form label[name="after"] {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: 20px; }
   form label[name="yourName"] {
+    margin-top: 40px;
     display: block;
     clear: both; }
 
@@ -216,10 +218,9 @@ p {
 
 .container {
   display: block;
-  width: 1px;
-  padding-bottom: 30px;
   position: relative;
-  margin-bottom: 12px;
+  margin: 0 auto;
+  width: 40px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -234,7 +235,7 @@ p {
 .checkmark {
   position: absolute;
   top: 0;
-  left: calc(50% - 40px);
+  left: 0;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -254,7 +255,6 @@ p {
 .container input:checked ~ .checkmark:after {
   display: block; }
 
-/* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 11px;
   top: 3px;

@@ -32,8 +32,10 @@ form {
     }
     label[name="after"] {
         padding-bottom: 0;
+        margin-bottom: 20px;
     }
     label[name="yourName"] {
+        margin-top: 40px;
         display: block;
         clear: both;
     }
@@ -105,28 +107,27 @@ p {
 }
 
 .container {
-  display: block;
-  width: 1px;
-  padding-bottom: 30px;
-  position: relative;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      margin: 0 auto;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 40px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        margin: 0 auto;
   }
 }
 
 .checkmark {
   position: absolute;
   top: 0;
-  left: calc(50% - 40px);
+  left: 0;
   height: 40px;
   width: 40px;
   border: 2px solid black;
@@ -151,7 +152,6 @@ p {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 11px;
   top: 3px;
