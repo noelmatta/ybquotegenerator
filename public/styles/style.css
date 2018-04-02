@@ -136,7 +136,7 @@ body {
   background-repeat: repeat;
   background-position: center top;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   font-size: 16px; }
 
 form {
@@ -166,29 +166,42 @@ header, .intro, .questions, .outputMessage {
   padding: 20px;
   box-shadow: 0 5px 8px #888888; }
 
-.intro, .questions, .outputMessage {
-  width: 50%;
+.intro, .questions, .outputMessage, footer, h1 {
+  max-width: 1180px;
+  width: 85%;
   margin: 0 auto;
   font-size: 1.5rem;
   padding: 5px 30px; }
 
 footer {
-  margin: 0 auto;
-  min-width: 50%;
   text-align: center;
-  color: white; }
+  color: black;
+  padding: 1px 0;
+  background-color: white;
+  opacity: 0.9; }
   footer a {
+    color: red;
     text-decoration: none; }
+    footer a:hover {
+      color: blue; }
 
 .outputMessage {
   margin-bottom: 30px; }
+  .outputMessage p {
+    margin: 0 auto;
+    width: 80%;
+    line-height: 4rem; }
+    .outputMessage p:last-of-type {
+      padding-bottom: 20px; }
 
 .intro {
   text-align: center; }
+  .intro p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px; }
 
 h1, h2 {
-  margin: 0 auto;
-  width: 50%;
   font-family: 'Graduate', cursive;
   text-align: center;
   font-size: 4rem; }
@@ -200,3 +213,46 @@ h2 {
 p {
   font-family: 'Indie Flower', cursive;
   font-size: 2rem; }
+
+@media (max-width: 909px) {
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 1.8rem; }
+  .intro p, .outputMessage p {
+    font-size: 1.5rem;
+    width: 95%; }
+  label, select {
+    font-size: 1.3rem; }
+  .intro, .questions, .outputMessage, footer, h1 {
+    width: 95%; }
+  form label, form input, form select, form textarea {
+    width: 95%; } }
+
+@media (max-width: 639px) {
+  h1 {
+    font-size: 2.5rem; } }
+
+@media (max-width: 548px) {
+  h1 {
+    font-size: 2rem; } }
+
+@media (max-width: 460px) {
+  .intro p, .outputMessage p {
+    font-size: 1.3rem; }
+  h1 {
+    font-size: 1.8rem; }
+  h2 {
+    font-size: 1.3rem; }
+  footer p {
+    font-size: 1.3rem; } }
+
+@media (max-width: 424px) {
+  h1 {
+    font-size: 1.5rem; } }
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.3rem; }
+  h2 {
+    font-size: 1.1rem; } }
