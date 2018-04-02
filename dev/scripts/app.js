@@ -41,6 +41,7 @@ class App extends React.Component {
             <input type="text" id="course" value={this.state.course} onChange={this.handleChange} />
             <label htmlFor="message">Are They...</label>
             <select id="message" onChange={this.handleChange}>
+              <option value="0">select option:</option>
               <option value="1">a rapper/singer/performer/athlete/etc.?</option>
               <option value="2">that person you awkwardly had a crush on?</option>
               <option value="3">really smart and hard-working?</option>
@@ -48,7 +49,10 @@ class App extends React.Component {
               <option value="5">the party animal type?</option>            
             </select>
             <label name="after">Do You Still Want To See This Person?</label>
-            <input type="checkbox" onClick={this.toggle.bind(this)} />
+            <label class="container clearfix">
+              <input type="checkbox" />
+              <span class="checkmark" onClick={this.toggle.bind(this)}></span>
+            </label>
             <label name="yourName">Finally, What's Your Name?</label>
             <input type="text" id="yourName" value={this.state.yourName} onChange={this.handleChange} />
             <label htmlFor="extraMessage">Anything else you want to say? (optional)</label>
