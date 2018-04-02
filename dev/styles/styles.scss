@@ -22,10 +22,13 @@ form {
         width: 80%;
         display: block;
         margin: 0 auto;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
     }
     label {
         margin-top: 20px;
-
+        border: none;
     }
     label[name="after"] {
         margin-bottom: 20px; 
@@ -52,7 +55,7 @@ header, .intro, .questions, .outputMessage {
 
 footer {
     margin: 0 auto;
-    width: 50%;
+    min-width: 50%;
     text-align: center;
     color: white;
     a {
