@@ -222,6 +222,8 @@ p {
   .intro p, .outputMessage p {
     font-size: 1.5rem;
     width: 95%; }
+  .outputMessage p {
+    line-height: 2.5rem; }
   label, select {
     font-size: 1.3rem; }
   .intro, .questions, .outputMessage, footer, h1 {
