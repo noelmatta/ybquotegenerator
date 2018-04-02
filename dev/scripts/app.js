@@ -55,7 +55,7 @@ class App extends React.Component {
             </label>
             <label name="yourName">Finally, What's Your Name?</label>
             <input type="text" id="yourName" value={this.state.yourName} onChange={this.handleChange} />
-            <label htmlFor="extraMessage">Anything else you want to say? (optional)</label>
+            <label htmlFor="extraMessage">Anything Else You Want To Say? (optional)</label>
             <textarea type="text" id="extraMessage" value={this.state.extraMessage} onChange={this.handleChange} />
           </form>
           <h2>Cool! Here's your message:</h2>
